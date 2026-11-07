@@ -1,0 +1,26 @@
+Google Search Console 등록 안내
+최종 점검: 2026-11-07
+
+1. 먼저 이 폴더 안의 파일을 GitHub Pages 저장소의 게시 위치에 업로드하고 배포가 끝날 때까지 기다립니다. 이 파일은 배포를 자동으로 수행하지 않습니다. index-ja.html, index-en.html과 sitemap.xml도 빠짐없이 업로드하세요.
+
+2. https://search.google.com/search-console/ 에서 URL 접두어 속성을 추가합니다.
+https://storykim1980-crypto.github.io/Mikuji-Note/
+
+3. Search Console이 제시하는 소유권 확인 방법을 따릅니다. HTML 파일 방식이라면 Google이 제공하는 정확한 파일을 게시 폴더에 올린 다음, Google이 지정한 공개 URL에서 열리는 것을 확인하고 인증합니다. Google이 제공하지 않은 확인 코드나 파일을 임의로 만들지 마세요.
+
+4. 사이트맵 메뉴에서 sitemap.xml을 제출합니다. 전체 주소:
+https://storykim1980-crypto.github.io/Mikuji-Note/sitemap.xml
+업로드 후 브라우저에서 해당 주소가 열리는지 확인하세요. 제출은 크롤링이나 색인, 검색 순위를 보장하지 않습니다.
+
+5. URL 검사를 사용해 홈페이지, 언어별 홈페이지와 파워스폿 가이드의 공개 URL을 검사합니다. 실제 URL 테스트로 렌더링과 색인 가능 여부를 확인하고 필요한 경우 색인 생성을 요청하세요. 검색 결과 반영까지 시간이 걸릴 수 있습니다.
+
+6. 현재 대표 URL 및 사이트맵은 위 GitHub Pages 프로젝트 주소를 기준으로 합니다. 독자 도메인을 실제로 구입·연결한 후에는 모든 HTML의 canonical, hreflang, og:url과 sitemap.xml의 주소를 새 공개 주소로 교체하고, 실제 이동 경로와 새 Search Console 속성을 확인하세요. 기존 주소에서 새 주소로 영구 리디렉션할 수 있는지 배포 환경에서 확인하고 사이트 이전 계획을 세우세요. 도메인 구매와 연결은 아직 완료되지 않았습니다.
+
+참고: robots.txt는 프로젝트 하위 경로가 아니라 호스트 루트 https://storykim1980-crypto.github.io/robots.txt 에 있어야 해당 호스트의 크롤러가 읽습니다. Mikuji-Note 저장소 폴더에 넣은 robots.txt는 그 위치를 대신할 수 없습니다. 현재 루트 robots.txt는 404로 확인되어, 별도 차단 규칙을 이 프로젝트에서 가정하지 않았습니다. 사이트맵은 Search Console에 직접 제출합니다.
+
+Google 공식 문서:
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+https://developers.google.com/search/docs/specialty/international/localized-versions
+https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites
+https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt
+https://developers.google.com/search/docs/appearance/site-names
