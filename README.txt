@@ -4,7 +4,7 @@
 
 사이트 구성
 - index.html: 한국어·일본어·영어 오미쿠지 자판기 및 메인 화면
-- places.html, places-ja.html, places-en.html: 3개 언어 파워스폿 가이드
+- places.html, places-ja.html, places-en.html: 3개 언어 파워스폿 가이드 (전국 30곳)
 - guide.html, guide-ja.html, guide-en.html: 3개 언어 오미쿠지 가이드
 - about.html, about-ja.html, about-en.html: 3개 언어 소개 및 개인정보 안내
 - editorial.css, places.css, *.webp: 디자인 및 이미지 파일
@@ -21,3 +21,5 @@
 5. 실제 호스팅·로그·광고·분석 서비스에 맞게 세 언어의 개인정보 안내를 공개 전에 검토·수정하세요. 이 패키지는 결제 및 광고를 연결하지 않았습니다.
 
 Google Fonts를 사용하므로 인터넷 연결이 필요하며, 연결되지 않으면 기기의 기본 글꼴로 표시됩니다. 브라우저 정책상 음악 자동재생이 차단되면 이용자의 첫 조작 이후 시작될 수 있습니다. 운세 보관함과 실제 결제 기능은 없습니다.
+
+배경 음악은 사이트 내 Web Audio로 연주되는 창작 합성 음악입니다. 별도의 음원 파일이 필요하지 않습니다.
