@@ -24,3 +24,9 @@ https://developers.google.com/search/docs/specialty/international/localized-vers
 https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites
 https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt
 https://developers.google.com/search/docs/appearance/site-names
+
+추가 적용 사항과 주의
+- 12개 페이지에 실제 URL과 일치하는 WebPage JSON-LD, ko/ja/en 및 한국어 대체 x-default가 포함됩니다. 구조화 데이터는 검색결과의 특정 형태를 보장하지 않습니다. 공개 배포 후 Google URL 검사에서 확인하세요.
+- CSS 파일은 내용 해시 기반 버전이 붙습니다. CSS를 수정할 때는 이를 참조하는 모든 HTML의 해당 ?v= 값을 새 해시로 갱신한 뒤 함께 배포하세요. HTML의 캐시 설정은 서버 응답 헤더가 결정하므로 메타 태그만으로 즉시 갱신을 보장할 수 없습니다.
+- 현재 사이트에는 중국어 버전이 없습니다. 번역 없이 zh URL이나 hreflang을 추가하지 않았습니다. 각 언어의 실제 주소는 /ko/, /ja/, /en/ 폴더가 아니라 기존 HTML 주소입니다.
+- 애드센스 신청 및 광고 스크립트는 추가하지 않았습니다.

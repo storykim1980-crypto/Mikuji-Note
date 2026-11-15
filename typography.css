@@ -39,3 +39,6 @@ footer.site-footer .sf-group h2,footer.site-footer .sf-bottom,footer.site-footer
  .slip .detail{grid-template-columns:88px minmax(0,1fr)}
 }
 @media(max-width:380px){.top .main-nav{gap:2px 5px}.top .main-nav a{padding:8px 6px;font-size:13px}.steps{font-size:10px}.steps b{font-size:12px}.display-intro{flex-wrap:wrap}.display-intro span:last-child{max-width:none}.slip .detail{grid-template-columns:80px minmax(0,1fr)}}
+/* Keep Korean words intact where space allows; exceptionally long strings may wrap. */
+html:lang(ko) .simple h1{font-size:clamp(30px,8vw,42px);line-height:1.35;word-break:keep-all;overflow-wrap:break-word}
+html:lang(ko) .simple p,html:lang(ko) .simple li{word-break:keep-all;overflow-wrap:break-word}
