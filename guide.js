@@ -1,0 +1,1 @@
+const search=document.getElementById('search'), cards=[...document.querySelectorAll('[data-terms]')];search.addEventListener('input',()=>{let q=search.value.trim().toLowerCase(),n=0;cards.forEach(c=>{let show=(c.dataset.terms+' '+c.textContent).toLowerCase().includes(q);c.hidden=!show;if(show)n++});document.getElementById('empty').hidden=n>0});
