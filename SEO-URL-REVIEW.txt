@@ -1,0 +1,25 @@
+검색 최적화와 주소 구조 점검
+
+1. 적용한 구조
+첨부 내용의 권장안에 따라 실제 페이지 주소를 유지합니다. 하나의 주소에 모든 콘텐츠를 가두거나 #/ 기반 라우팅으로 바꾸지 않았습니다. 한국어·일본어·영어로 홈, 파워스폿, 오미쿠지 가이드, 소개 각 4개씩 총 12개 HTML 페이지가 있습니다. 파일 경로는 주소 표시줄에 보입니다.
+
+예시 (현재 공개 주소 기준)
+한국어 홈: https://storykim1980-crypto.github.io/Mikuji-Note/
+일본어 홈: https://storykim1980-crypto.github.io/Mikuji-Note/index-ja.html
+영어 홈: https://storykim1980-crypto.github.io/Mikuji-Note/index-en.html
+한국어 여행지: https://storykim1980-crypto.github.io/Mikuji-Note/places.html
+
+홈 언어 전환의 이전·다음 방문 기록이 유지되도록 개선했습니다. 뒤로가기·앞으로가기에서는 화면 언어와 주소, 대표 URL 정보를 함께 복원합니다. 새로고침과 공유에도 각 언어 페이지가 직접 열립니다.
+
+2. 점검 결과
+12개 페이지의 제목·설명·H1·JSON-LD 및 대표 URL을 확인하고, 페이지별 canonical과 사이트맵에 수록된 12개 URL이 일치함을 검사했습니다. 각 언어의 hreflang이 자기 자신과 다른 언어를 가리키고 상호 참조하는지도 검사했습니다. 로컬 내부 링크와 앵커의 대상이 존재하는지 확인했습니다.
+
+3. 장소와 운세의 검색 단위
+현재 30개 장소는 언어별 places 페이지 안의 섹션입니다. #fushimi 같은 앵커는 같은 문서의 원하는 위치를 공유하거나 이동하기 위한 것으로, 각각 별도 HTML 페이지나 사이트맵 URL이 아닙니다. 20개 운세는 홈의 대화형 기능이며 결과도 독립 URL을 갖는 페이지가 아닙니다. 검색엔진이 본문을 발견할 수는 있으나, 각 섹션·운세를 별도의 색인 페이지로 취급한다고 보장할 수 없습니다. 장소마다 독립 페이지가 필요하다면 고유한 본문·고유 URL·언어별 대응 링크를 갖춘 별도 설계와 제작이 필요합니다. 기존 앵커를 검색 목적만으로 빈 페이지에 복사하지 마세요.
+
+4. 공개 및 등록
+이 점검은 작업 폴더의 수정본에 대한 것입니다. 최신 파일들을 GitHub Pages에 배포한 다음 공개 페이지를 직접 확인하고, Search Console의 URL 접두어 속성에서 소유권 확인과 sitemap.xml 제출을 진행해야 합니다. Search Console 등록이나 Google 색인 여부는 이 파일만으로 확인할 수 없으며, 사이트맵 제출과 메타 태그는 노출이나 순위를 보장하지 않습니다. japansacred.com을 실제로 연결한 경우 먼저 대표 URL·hreflang·사이트맵 등을 실제 공개 주소에 맞게 변경하고 새 속성을 확인하세요. 애드센스 코드는 추가하지 않았습니다.
+
+참고: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+https://developers.google.com/search/docs/specialty/international/localized-versions
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls

@@ -1,0 +1,39 @@
+/* Mobile-only refinement: preserve the cabinet and content while improving reading rhythm. */
+@media (max-width:760px){
+  .top{gap:8px;margin-bottom:16px;padding-bottom:13px}
+  .top .toolbar{width:100%;justify-content:space-between;gap:8px}
+  .top .toolbar #sound{min-height:44px;max-width:55%;line-height:1.35;text-align:left;letter-spacing:0;padding:7px 4px}
+  .top .main-nav{width:100%;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,.9fr) minmax(0,1.65fr);gap:4px;align-items:stretch}
+  .top .main-nav a{display:flex;justify-content:center;text-align:center;min-width:0;min-height:46px;padding:7px 4px;font-size:12px;line-height:1.35;letter-spacing:0;overflow-wrap:normal;word-break:keep-all;border:1px solid #e9e4d92b;background:#ffffff09}
+  .welcome{margin-bottom:23px}
+  .welcome-copy{padding:27px 25px 29px}
+  .welcome-copy h1{line-height:1.42;margin:14px 0 16px;word-break:keep-all;overflow-wrap:break-word}
+  .welcome-copy p{text-wrap:pretty;line-height:1.8;margin:0;word-break:keep-all;overflow-wrap:break-word}
+  .welcome-actions{gap:8px;margin-top:20px}
+  .welcome-actions a{display:flex;flex:1 1 0;min-width:0;align-items:center;justify-content:center;min-height:48px;padding:10px 8px;line-height:1.4;text-align:center;word-break:keep-all;overflow-wrap:break-word}
+  .welcome-photo{min-height:clamp(165px,49vw,230px);background:#405346}
+  .cabinet .display-inner{min-width:0}
+  .cabinet .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 9px;align-items:stretch}
+  .cabinet .product{display:flex;flex-direction:column;min-width:0}
+  .cabinet .frame{display:flex;flex:1;min-width:0}
+  .cabinet .ticket{display:flex;flex:1;flex-direction:column;min-width:0;width:100%}
+  .cabinet .art{height:clamp(125px,39vw,180px);flex:none}
+  .cabinet .ticket h2{font-size:14px;line-height:1.4;min-height:2.8em;margin:8px 0 3px;word-break:keep-all;overflow-wrap:break-word}
+  .cabinet .ticket small{margin-top:auto;min-height:2.6em;line-height:1.3;overflow-wrap:break-word;letter-spacing:0}
+  .cabinet .control{height:56px;min-height:56px;gap:5px}
+  .cabinet .push{width:46px;height:46px;min-width:46px;min-height:46px;touch-action:manipulation}
+  .cabinet .display-intro{gap:5px;line-height:1.5}
+  .cabinet .steps{gap:4px;text-align:center}
+  .home-places,.ritual{overflow-wrap:break-word}
+  html:lang(ko) :is(.hero-content p,.welcome-copy p,.home-places p,.home-place-cards span,.ritual p,.ritual-steps span,.directory p,.directory h1,.directory h2,.hero p,.simple p){word-break:keep-all;overflow-wrap:break-word}
+  .directory .place-body p,.hero p{line-height:1.85}
+  .directory .place-links{gap:8px 16px}
+  .directory .place-links a{display:inline-flex;align-items:center;min-height:44px}
+}
+@media(max-width:360px){
+ .top .main-nav a{font-size:11px}
+ .welcome-copy{padding:25px 20px 27px}
+ .welcome-actions a{flex:1 1 100%;min-width:0}
+ .cabinet .ticket h2{font-size:13px}
+ .cabinet .ticket small{font-size:9px}
+}
